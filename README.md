@@ -1,14 +1,13 @@
 # RealtimeWeatherApp
 Preview the site at https://ttcode10.github.io/
 
-![image](https://github.com/ttcode10/ttcode10.github.io/blob/master/readme-img/day-mode.png)<br>
-1. <strong>Realtime Request: </strong>Lookup weather including 5 days forecasts of world cities, powered by metaweather.com API.
+![image](https://github.com/ttcode10/ttcode10.github.io/blob/master/readme-img/day-mode.png)
+<br>1. <strong>Realtime Request: </strong>Lookup realtime weather and 5 day forecast of world cities, powered by metaweather.com API.
 
 
 ![image](https://github.com/ttcode10/ttcode10.github.io/blob/master/readme-img/search-results.png)<br>
-2. <strong>Input Debounce Protection: </strong>To prevent unnecessary frequent query to the API, at least two characters are required while input destination and start executing data fetching after 300ms pause of input.
-
-3. <strong>Asynchronous Query: </strong>Implemented asynchronous manner to get backend data, significantly reducing user waiting.<br>
+2. <strong>Input Debounce Protection: </strong>To prevent unnecessary frequent querying the API, at least two characters are required while input destination and start executing data fetching after 300ms pause of input.<br><br>
+3. <strong>Asynchronous Query: </strong>Implemented asynchronous method to get backend data, significantly reducing user waiting.
 
 
 ![image](https://github.com/ttcode10/ttcode10.github.io/blob/master/readme-img/night-mode.png)<br>
