@@ -6,8 +6,8 @@ Preview the site at https://ttcode10.github.io/
 
 
 ![image](https://github.com/ttcode10/ttcode10.github.io/blob/master/readme-img/search-results.png)<br>
-2. <strong>Input Debounce Protection: </strong>To prevent unnecessary frequent querying the API, at least two characters are required while input destination and start executing data fetching after 300ms pause of input.<br>
-3. <strong>Asynchronous Query: </strong>Implemented asynchronous method to get backend data, significantly reducing user waiting.<br><br>
+2. <strong>Input Debounce Protection: </strong>To prevent unnecessary frequent querying the API, at least two characters are required while input destination and start executing data fetching after 300ms pause of input.
+<br><br>3. <strong>Asynchronous Query: </strong>Implemented asynchronous method to get backend data, significantly reducing user waiting.<br><br>
 
 
 ![image](https://github.com/ttcode10/ttcode10.github.io/blob/master/readme-img/night-mode.png)<br>
