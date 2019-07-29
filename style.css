@@ -1,0 +1,274 @@
+/*--------Remove all default style---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+/*----------------------------------------*/
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 7em;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+h3,
+h4,
+p,
+ul,
+li {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 2;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    background: radial-gradient(#41A0CE, #011762);
+}
+
+.night {
+    background: radial-gradient(#27407C, #03081A);
+}
+
+/* .wrapper {
+    overflow-y: auto;
+} */
+.grid-container-up {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1 1.5;
+    grid-template-areas:
+    "c c c t t"
+    "d d d i i";
+    grid-gap: 3%;
+    width: 80%;
+    margin: 0 auto 3%;
+    align-items: center;
+}
+
+.grid-container-down {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "f1 f2 f3 f4 f5";
+    grid-gap: 3%;
+    width: 80%;
+    margin: 3% auto;
+    align-items: center;
+}
+
+.search {
+    grid-column-start: span 5;
+    margin: 64px auto 24px;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 360px;
+    height: 40px;
+    padding: 0 1.1em;
+    align-items: center;
+}
+
+.search input {
+    flex-grow: 1;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #666;
+    border: none;
+    outline: none;
+}
+
+.search input::placeholder {
+    color: #999;
+}
+
+.search span {
+    color: #666;
+    font-size: 1.1em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.search-result {
+    margin-top: 48px;
+    grid-column-start: span 5;
+}
+
+.no-results-list {
+    margin: 5% auto 0;
+    text-align: center;
+}
+
+.no-results {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 6em;
+}
+
+.searchDefault {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.searchDefault img {
+    color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+}
+
+.searchDefault h3 {
+    margin-top: 32px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.city-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 10px;
+    padding: 16px;
+    width: 80%;
+    margin: 16px auto;
+    text-align: left;
+    cursor: pointer;
+}
+
+.today-icon {
+    width: 30%;
+    text-align: right;
+}
+
+.forecast-icon {
+    width: 30%;
+    margin: 24px auto;
+}
+
+.city-list h2 {
+    width: 33%;
+    margin-left: 32px;
+}
+
+.city-list h3 {
+    width: 33%;
+    margin-left: 32px;
+}
+
+
+.city {
+    grid-area: c;
+}
+
+.current-temperature {
+    grid-area: t;
+    justify-self: end;
+    text-align: right;
+}
+
+.detail {
+    grid-area: d;
+}
+
+.today-icon {
+    grid-area: i;
+    justify-self: end;
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 10px;
+    width: 100%;
+    padding: 24px 0;
+}
+
+#forecast-1 {
+    grid-area: f1;
+}
+
+#forecast-2 {
+    grid-area: f2;
+}
+
+#forecast-3 {
+    grid-area: f3;
+}
+
+#forecast-4 {
+    grid-area: f4;
+}
+
+#forecast-5 {
+    grid-area: f5;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .city,
+    .current-temperature,
+    .today-icon,
+    .detail {
+        text-align: center;
+    }
+
+    .current-temperature,
+    .today-icon {
+        justify-self: center;
+    }
+
+    .grid-container-up {
+        grid-template-areas:
+        "c c c c c"
+        "t t t t t"
+        "i i i i i"
+        "d d d d d";
+        margin: 0 auto 20%;
+    }
+
+    .grid-container-down {
+        grid-template-areas:
+        "f1 f1 f1 f1 f1"
+        "f2 f2 f2 f2 f2"
+        "f3 f3 f3 f3 f3"
+        "f4 f4 f4 f4 f4"
+        "f5 f5 f5 f5 f5"
+        ;
+    }
+
+    .wrapper {
+        margin-bottom: 40%;
+    }
+}
