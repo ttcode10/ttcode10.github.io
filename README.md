@@ -1,5 +1,5 @@
 # RealtimeWeatherApp
-Preview the site at https://ttcode10.github.io/
+Preview the site at https://ttcode10.github.io/weatherjs/
 
 ![image](https://github.com/ttcode10/ttcode10.github.io/blob/master/readme-img/day-mode.png)
 <br>1. <strong>Realtime Request: </strong>Lookup realtime weather and 5-day forecast of world cities, powered by metaweather.com API.<br><br>
